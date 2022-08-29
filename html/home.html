@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Fortal Connect | Assistência</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="../css/matrix-style.css">
+    <link rel="stylesheet" href="../css/matrix-media.css">
+    <link rel="stylesheet" href="../css/fullcalendar.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" href="../css/css2.css">
+    <link rel="stylesheet" href="../css/boxicons.min.css">
+    <link rel="stylesheet" href="../css/fullcalendar.min.css">
+    <link rel="stylesheet" href="../css/jquery.jqplot.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="stylesheet" href="../css/css2(1).css">
+    <link rel="stylesheet" href="../css/css2(2).css">
+
+</head>
+
+<body>
+    <!--top-Header-menu-->
+    <div class="navebarn">
+        <div id="user-nav" class="navbar navbar-inverse"></div> 
+        <!-- New User -->
+        <div id="userr"
+            style="padding-right:45px;display:flex;flex-direction:column;align-items:flex-end;justify-content:center;">
+            <div class="user-names userT0" id="saudacao_usuario"></div>
+            <div class="userT" id="usuario_sistema"></div>
+            <section style="display:block;position:absolute;right:10px">
+                <div class="profile">
+                    <div class="profile-img"> 
+                        <a href="#">
+                            <img src="../imagens/a2c0e016d91ff61639ec3d6cfea18e02.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- End User -->
+
+    <div id="content">
+        <div id="content-header">
+            <div class="bemv">
+                <a href="../html/caixa.html">Sair</a>
+            </div>
+        </div>
+        <div class="container-flu">
+            <div class="row-fluid">
+                <div class="span12">
+                    
+                    <!--Menus-->
+                    <ul class="cardBox">
+
+                        <!-- Quartos -->
+                        <li class="card">
+                            <div>
+                                <div class="numbers">OS</div>
+                            </div> 
+                            <a href="../html/quartos.html">
+                                <div class="iconBx"> 
+                                    <i class="fa-solid fa-receipt"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- Quartos -->
+
+                        <!-- Cadastros -->
+                        <li class="card">
+                            <div>
+                                <div class="numbers">Cadastros</div>
+                            </div> 
+                            <a href="../html/cadastro.html">
+                                <div class="iconBx"> 
+                                    <i class="fa-solid fa-pen"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- Cadastros -->
+
+                        <!-- Relatórios -->
+                        <li class="card">
+                            <div>
+                                <div class="numbers">Relatórios</div>
+                            </div> 
+                            <a href="../html/relatorio.html">
+                                <div class="iconBx"> 
+                                    <i class="fa-solid fa-list"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- Relatórios -->
+                        
+                        <!--Hora-->
+                        <div class="card-cl">
+                            <div class="clock-card">
+                                <div class="clock-flex"> 
+                                    <span class="num hour_num">07</span>
+                                    <div class="tit">Horas</div>
+                                </div> 
+                                <span class="colun" id="colun-1">:</span>
+                                <div class="clock-flex"> 
+                                    <span class="num min_num">17</span>
+                                    <div class="tit">Minutos</div>
+                                </div>
+                                <div class="time_am_pm"> 
+                                    <span class="num am_pm">AM</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <!--Menus-->
+
+                </div>
+            </div>
+            <div id="tabelas_relatorios" class="span12A" style="margin-left: 0">
+                <div class="AAA">
+                    <div class="widget-box0">
+                        <div>
+                            <h5 class="cardHeader">OS's em Aberto</h5>
+                        </div>
+                        <div class="widget-content">
+                            <div id="container">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Nº</th>
+                                            <th>Cliente</th>
+                                            <th>Serial</th>
+                                            <th>Descrição</th>
+                                            <th>Status</th>
+                                            <th>Ação</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tabelaHomeProdutos">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+]
+    <!--end-Footer-part-->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/estilo/bootstrap.min.js"></script>
+    <script src="../js/estilo/nomes.js"></script>
+    <script src="https://kit.fontawesome.com/88ea2c002f.js" crossorigin="anonymous"></script>
+    <script src="../js/responsividade/home.js"></script>
+    
+</body>
+
+</html>
