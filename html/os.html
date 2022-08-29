@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>FC Assistência | OS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="../imagens/favicon-removebg-preview.png">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/matrix-style.css">
+  <link rel="stylesheet" href="../css/matrix-media.css">
+</head>
+
+<body>
+  <!--top-Header-menu-->
+  <div class="navebarn">
+    <div id="user-nav" class="navbar navbar-inverse"></div>
+    <!-- New User -->
+    <div id="userr"
+      style="padding-right:45px;display:flex;flex-direction:column;align-items:flex-end;justify-content:center;">
+      <div class="user-names userT0" id="saudacao_usuario"></div>
+      <div class="userT" id="usuario_sistema"></div>
+      <section style="display:block;position:absolute;right:10px">
+        <div class="profile">
+          <div class="profile-img">
+            <a href="">
+              <img src="../imagens/a2c0e016d91ff61639ec3d6cfea18e02.png" alt=""></a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- End User -->
+
+
+  <div id="content">
+    <!--start-top-serch-->
+    <div id="content-header">
+      <!-- New Bem-vindos -->
+      <div class="bemv">Dashboard</div>
+      <div id="breadcrumb">
+        <a id="home" class="tip-bottom"> Início</a>
+        <a href="" class="current tip-bottom"> OS </a>
+      </div>
+    </div>
+    <div class="container-flu">
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="row-fluid" style="margin-top:0">
+            <div class="span12">
+              <div class="widget-box">
+                <div class="widget-title" style="margin: -20px 0 0">
+                  <span class="icon">
+                    <i class="fas fa-wrench"></i>
+                  </span>
+                  <h5>Ordens de Serviços</h5>
+                </div>
+                <ul class="nav nav-tabs">
+
+                  <li class="active">
+                    <a data-toggle="tab" href="#adicionar">Adicionar</a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" href="#editar">Editar</a>
+                  </li>
+                </ul>
+
+                <!--<form class="form-horizontal" id="formCadastros">-->
+                  <div class="widget-content nopadding tab-content">
+
+                    <!--Clientes-->
+                    <div id="adicionar" class="tab-pane fade in active">
+
+                      <form action="" class="form-horizontal">
+                        <!--CPF/CNPJ-->
+                        <div class="control-group" name="codProdutos">
+                          <div class="controls">
+                            <input type="text" id="cpfcnpj" placeholder="CPF / CNPJ" required>
+                          </div>
+                        </div>
+
+                        <!--Nome-->
+                        <div class="control-group" name="codProdutos">
+                          <div class="controls">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Descrição" required></textarea>
+                          </div>
+                        </div>
+
+                        <!--Botões-->
+                        <div class="form-actions" name="codProdutos">
+                          <div class="span8">
+                            <div class="span9">
+                              <button type="button" class="button btn btn-primary" id="salvarFormPostProduto">
+                                <span class="button__icon">
+                                  <i class="fa-solid fa-floppy-disk"></i>
+                                </span>
+                                <span class="button__text2">Cadastrar</span>
+                              </button>
+                              <button type="reset" class="button btn btn-danger" id="limparFormPostProduto">
+                                <span class="button__icon">
+                                  <i class="fa-solid fa-xmark"></i>
+                                </span>
+                                <span class="button__text2">Limpar</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+
+                    </div>
+                    <!--Clientes-->
+
+                    <!--Componentes-->
+                    <div id="editar" class="tab-pane fade">
+
+                        <div id="concluidos" class="tab-pane fade in active">
+                            <table id="relQuartos" class="table table-bordered  dataTable no-footer" role="grid">
+                                <thead>
+                                <tr role="row">
+                                    <th>Nº</th>
+                                    <th>Cliente</th>
+                                    <th>Serial</th>
+                                    <th>Descrição</th>
+                                    <th>Status</th>
+                                    <th>Ação</th>
+                                </thead>
+                                <tbody id="">
+                                    <tr>
+                                        <td>12345</td>
+                                        <td>12345678909</td>
+                                        <td>F458FGN14D52</td>
+                                        <td>Fonte falhando e causando desligamento da maquina</td>
+                                        <td>Aguardando aprovação</td>
+                                        <td>
+                                            <button type="button" class="btn btn-warning">ALTERAR</button>
+                                            <button type="button" class="btn btn-danger">EXCLUIR</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <!--Componentes-->
+
+                  </div>
+                <!--</form>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/estilo/bootstrap.min.js"></script>
+<script src="../js/estilo/nomes.js"></script>
+<script src="../js/setup/sitePath.js"></script>
+<script src="https://kit.fontawesome.com/88ea2c002f.js" crossorigin="anonymous"></script>
+
+</html>
