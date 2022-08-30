@@ -40,7 +40,7 @@
       <!-- New Bem-vindos -->
       <div class="bemv">Dashboard</div>
       <div id="breadcrumb">
-        <a id="home" class="tip-bottom"> Início</a>
+        <a href="./home.html" class="tip-bottom"> Início</a>
         <a href="" class="current tip-bottom"> Cadastros </a>
       </div>
     </div>
@@ -140,13 +140,18 @@
                     <!--Componentes-->
                     <div id="componentes" class="tab-pane fade">
 
-                      <form action="" class="form-horizontal">
+                      <form action="" method="POST" class="form-horizontal" id="formComponentes">
 
                         <!--Componentes-->
                         <div class="control-group">
                           <div class="controls">
-                            <select name="" id="">
+                            <select form="formComponentes" name="icomponentes" id="icomponentes">
                               <option hidden>Componente</option>
+                              <option value="placa">Placa</option>
+                              <option value="processador">Processador</option>
+                              <option value="memoria">Memória</option>
+                              <option value="hd">HD</option>
+                              <option value="fonte">Fonte</option>
                             </select>
                           </div>
                         </div>
@@ -154,7 +159,7 @@
                         <!--Campo Código-->
                         <div class="control-group">
                           <div class="controls">
-                            <input type="text" id="" placeholder="" required>
+                            <input type="text" name="" id="" placeholder="" required>
                           </div>
                         </div>
 
@@ -162,13 +167,13 @@
                         <div class="form-actions" name="cadQuartos">
                           <div class="span8">
                             <div class="span9">
-                              <button type="button" class="button btn btn-primary" id="salvarFormPostQuarto">
+                              <button type="button" class="button btn btn-primary" id="salvarFormComponentes">
                                 <span class="button__icon">
                                   <i class="fa-solid fa-floppy-disk"></i>
                                 </span>
                                 <span class="button__text2">Cadastrar</span>
                               </button>
-                              <button type="reset" class="button btn btn-danger" id="limparFormPostQuarto">
+                              <button type="reset" class="button btn btn-danger" id="">
                                 <span class="button__icon">
                                   <i class="fa-solid fa-xmark"></i>
                                 </span>
@@ -281,8 +286,7 @@
 </body>
 <script src="../js/jquery.js"></script>
 <script src="../js/estilo/bootstrap.min.js"></script>
-<script src="../js/estilo/nomes.js"></script>
-<script src="../js/setup/sitePath.js"></script>
-<script src="https://kit.fontawesome.com/88ea2c002f.js" crossorigin="anonymous"></script>
 
+<script src="https://kit.fontawesome.com/88ea2c002f.js" crossorigin="anonymous"></script>
+<script src="../js/cadastros/componentes.js"></script>
 </html>
