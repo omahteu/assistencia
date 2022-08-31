@@ -4,6 +4,7 @@ import { listarMemorias } from "./memoria.js"
 import { listarHds } from "./hd.js"
 import { listarFontes } from "./fonte.js"
 import { listarSeriais} from "./serial.js"
+import { listarClientes } from "./cliente.js"
 
 $(document).ready(function(){
     listarPlacas()
@@ -12,4 +13,5 @@ $(document).ready(function(){
     listarHds()
     listarFontes()
     listarSeriais()
+    listarClientes()
 })

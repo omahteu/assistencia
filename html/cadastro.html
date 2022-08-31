@@ -56,6 +56,8 @@
                   </span>
                   <h5>Cadastros do Sistema</h5>
                 </div>
+
+                <!--Abas-->
                 <ul class="nav nav-tabs">
 
                   <li class="active">
@@ -67,218 +69,263 @@
                   <li>
                     <a data-toggle="tab" href="#serial">Serial</a>
                   </li>
+                  <li>
+                    <a data-toggle="tab" href="#maquinas">Venda</a>
+                  </li>
+
                 </ul>
+                <!--Abas-->
 
-                <!--<form class="form-horizontal" id="formCadastros">-->
-                  <div class="widget-content nopadding tab-content">
+                <!--Telas-->
+                <div class="widget-content nopadding tab-content">
 
-                    <!--Clientes-->
-                    <div id="clientes" class="tab-pane fade in active">
+                  <!--Clientes-->
+                  <div id="clientes" class="tab-pane fade in active">
 
-                      <form action="../php/ajax/insercao/enviar_cliente.php" method="POST" class="form-horizontal" id="forClientes">
+                    <form action="../php/ajax/insercao/enviar_cliente.php" method="POST" class="form-horizontal" id="forClientes">
 
-                        <!--CPF/CNPJ-->
-                        <div class="control-group" name="codProdutos">
-                          <div class="controls">
-                            <input type="text" name="cpfcnpj" id="cpfcnpj" placeholder="CPF / CNPJ" required>
+                      <!--CPF/CNPJ-->
+                      <div class="control-group">
+                        <div class="controls">
+                          <input type="text" name="cpfcnpj" id="cpfcnpj" placeholder="CPF / CNPJ" required>
+                        </div>
+                      </div>
+
+                      <!--Nome-->
+                      <div class="control-group">
+                        <div class="controls">
+                          <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                        </div>
+                      </div>
+
+                      <!--Telefone-->
+                      <div class="control-group">
+                        <div class="controls">
+                          <input type="text" name="telefone" id="telefone" placeholder="Telefone" required>
+                        </div>
+                      </div>
+
+                      <!--Endereço-->
+                      <div class="control-group">
+                        <div class="controls">
+                          <input type="text" name="endereco" id="endereco" placeholder="Endereço" required>
+                        </div>
+                      </div>
+
+                      <!--Botões-->
+                      <div class="form-actions">
+                        <div class="span8">
+                          <div class="span9">
+                            <button type="submit" class="button btn btn-primary" id="">
+                              <span class="button__icon">
+                                <i class="fa-solid fa-floppy-disk"></i>
+                              </span>
+                              <span class="button__text2">Cadastrar</span>
+                            </button>
+                            <button type="reset" class="button btn btn-danger" id="">
+                              <span class="button__icon">
+                                <i class="fa-solid fa-xmark"></i>
+                              </span>
+                              <span class="button__text2">Limpar</span>
+                            </button>
                           </div>
                         </div>
+                      </div>
 
-                        <!--Nome-->
-                        <div class="control-group" name="codProdutos">
-                          <div class="controls">
-                            <input type="text" name="nome" id="nome" placeholder="Nome" required>
-                          </div>
-                        </div>
-
-                        <!--Telefone-->
-                        <div class="control-group" name="codProdutos">
-                          <div class="controls">
-                            <input type="text" name="telefone" id="telefone" placeholder="Telefone" required>
-                          </div>
-                        </div>
-
-                        <!--Endereço-->
-                        <div class="control-group" name="codProdutos">
-                          <div class="controls">
-                            <input type="text" name="endereco" id="endereco" placeholder="Endereço" required>
-                          </div>
-                        </div>
-
-                        <!--Serial-->
-                        <div class="control-group" name="codProdutos">
-                          <div class="controls">
-                            <select form="forClientes" name="listaSerial" id="listaSerial" required>
-                              <option value="" hidden>Serial</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <!--Botões-->
-                        <div class="form-actions" name="codProdutos">
-                          <div class="span8">
-                            <div class="span9">
-                              <button type="submit" class="button btn btn-primary" id="">
-                                <span class="button__icon">
-                                  <i class="fa-solid fa-floppy-disk"></i>
-                                </span>
-                                <span class="button__text2">Cadastrar</span>
-                              </button>
-                              <button type="reset" class="button btn btn-danger" id="">
-                                <span class="button__icon">
-                                  <i class="fa-solid fa-xmark"></i>
-                                </span>
-                                <span class="button__text2">Limpar</span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-
-                      </form>
-
-                    </div>
-                    <!--Clientes-->
-
-                    <!--Componentes-->
-                    <div id="componentes" class="tab-pane fade">
-
-                      <form action="../php/ajax/insercao/enviar_componentes.php" method="POST" class="form-horizontal" id="formComponentes">
-
-                        <!--Componentes-->
-                        <div class="control-group">
-                          <div class="controls">
-                            <select form="formComponentes" name="icomponentes" id="icomponentes">
-                              <option hidden>Componente</option>
-                              <option value="placa">Placa</option>
-                              <option value="processador">Processador</option>
-                              <option value="memoria">Memória</option>
-                              <option value="hd">HD</option>
-                              <option value="fonte">Fonte</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <!--Campo Código-->
-                        <div class="control-group">
-                          <div class="controls">
-                            <input type="text" name="" id="" placeholder="" required>
-                          </div>
-                        </div>
-
-                        <!--Botões-->
-                        <div class="form-actions" name="cadQuartos">
-                          <div class="span8">
-                            <div class="span9">
-                              <button type="submit" class="button btn btn-primary" id="">
-                                <span class="button__icon">
-                                  <i class="fa-solid fa-floppy-disk"></i>
-                                </span>
-                                <span class="button__text2">Cadastrar</span>
-                              </button>
-                              <button type="reset" class="button btn btn-danger" id="">
-                                <span class="button__icon">
-                                  <i class="fa-solid fa-xmark"></i>
-                                </span>
-                                <span class="button__text2">Limpar</span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </form>
-
-                    </div>
-                    <!--Componentes-->
-
-                    <!--Serial-->
-                    <div id="serial" class="tab-pane fade">
-
-                      <form action="../php/ajax/insercao/enviar_serial.php" method="POST" class="form-horizontal" id="formSerial">
-
-                        <!--Número de Serie-->
-                        <div class="control-group">
-                          <div class="controls">
-                            <input type="text" name="numser" id="numser" placeholder="Número de Série" required>
-                          </div>
-                        </div>
-
-                        <!--Placa-->
-                        <div class="control-group">
-                          <div class="controls">
-                            <select form="formSerial" name="select_placa" id="select_placa">
-                              <option value="" hidden>Placa</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <!--Processador-->
-                        <div class="control-group">
-                          <div class="controls">
-                            <select form="formSerial" name="select_processador" id="select_processador">
-                              <option value="" hidden>Processador</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <!--Memória-->
-                        <div class="control-group" name="cadIgs">
-                          <div class="controls">
-                            <select form="formSerial" name="select_memoria" id="select_memoria">
-                              <option value="" hidden>Memória</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <!--HD-->
-                        <div class="control-group" name="cadIgs">
-                          <div class="controls">
-                            <select form="formSerial" name="select_hd" id="select_hd">
-                              <option value="" hidden>HD</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <!--Fonte-->
-                        <div class="control-group" name="cadIgs">
-                          <div class="controls">
-                            <select form="formSerial" name="select_fonte" id="select_fonte">
-                              <option value="" hidden>Fonte</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <!--Data-->
-                        <div class="control-group" name="cadIgs">
-                          <div class="controls">
-                            <input type="date" name="garantia" id="garantia" required>
-                          </div>
-                        </div>
-
-                        <!--Botões-->
-                        <div class="form-actions" name="cadIgs">
-                          <div class="span8">
-                            <div class="span9">
-                              <button type="submit" class="button btn btn-primary" id="">
-                                <span class="button__icon">
-                                  <i class="fa-solid fa-floppy-disk"></i>
-                                </span>
-                                <span class="button__text2">Cadastrar</span>
-                              </button>
-                              <button type="reset" class="button btn btn-danger" id="">
-                                <span class="button__icon">
-                                  <i class="fa-solid fa-xmark"></i>
-                                </span>
-                                <span class="button__text2">Limpar</span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </form>
-
-                    </div>
-                    <!--Serial-->
+                    </form>
 
                   </div>
-                <!--</form>-->
+                  <!--Clientes-->
+
+                  <!--Componentes-->
+                  <div id="componentes" class="tab-pane fade">
+
+                    <form action="../php/ajax/insercao/enviar_componentes.php" method="POST" class="form-horizontal" id="formComponentes">
+
+                      <!--Componentes-->
+                      <div class="control-group">
+                        <div class="controls">
+                          <select form="formComponentes" name="icomponentes" id="icomponentes">
+                            <option hidden>Componente</option>
+                            <option value="placa">Placa</option>
+                            <option value="processador">Processador</option>
+                            <option value="memoria">Memória</option>
+                            <option value="hd">HD</option>
+                            <option value="fonte">Fonte</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <!--Campo Código-->
+                      <div class="control-group">
+                        <div class="controls">
+                          <input type="text" name="" id="" placeholder="" required>
+                        </div>
+                      </div>
+
+                      <!--Botões-->
+                      <div class="form-actions">
+                        <div class="span8">
+                          <div class="span9">
+                            <button type="submit" class="button btn btn-primary" id="">
+                              <span class="button__icon">
+                                <i class="fa-solid fa-floppy-disk"></i>
+                              </span>
+                              <span class="button__text2">Cadastrar</span>
+                            </button>
+                            <button type="reset" class="button btn btn-danger" id="">
+                              <span class="button__icon">
+                                <i class="fa-solid fa-xmark"></i>
+                              </span>
+                              <span class="button__text2">Limpar</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+
+                  </div>
+                  <!--Componentes-->
+
+                  <!--Serial-->
+                  <div id="serial" class="tab-pane fade">
+
+                    <form action="../php/ajax/insercao/enviar_serial.php" method="POST" class="form-horizontal" id="formSerial">
+
+                      <!--Número de Serie-->
+                      <div class="control-group">
+                        <div class="controls">
+                          <input type="text" name="numser" id="numser" placeholder="Número de Série" required>
+                        </div>
+                      </div>
+
+                      <!--Placa-->
+                      <div class="control-group">
+                        <div class="controls">
+                          <select form="formSerial" name="select_placa" id="select_placa">
+                            <option value="" hidden>Placa</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <!--Processador-->
+                      <div class="control-group">
+                        <div class="controls">
+                          <select form="formSerial" name="select_processador" id="select_processador">
+                            <option value="" hidden>Processador</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <!--Memória-->
+                      <div class="control-group">
+                        <div class="controls">
+                          <select form="formSerial" name="select_memoria" id="select_memoria">
+                            <option value="" hidden>Memória</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <!--HD-->
+                      <div class="control-group">
+                        <div class="controls">
+                          <select form="formSerial" name="select_hd" id="select_hd">
+                            <option value="" hidden>HD</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <!--Fonte-->
+                      <div class="control-group">
+                        <div class="controls">
+                          <select form="formSerial" name="select_fonte" id="select_fonte">
+                            <option value="" hidden>Fonte</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <!--Data-->
+                      <div class="control-group">
+                        <div class="controls">
+                          <input type="date" name="garantia" id="garantia" required>
+                        </div>
+                      </div>
+
+                      <!--Botões-->
+                      <div class="form-actions">
+                        <div class="span8">
+                          <div class="span9">
+                            <button type="submit" class="button btn btn-primary" id="">
+                              <span class="button__icon">
+                                <i class="fa-solid fa-floppy-disk"></i>
+                              </span>
+                              <span class="button__text2">Cadastrar</span>
+                            </button>
+                            <button type="reset" class="button btn btn-danger" id="">
+                              <span class="button__icon">
+                                <i class="fa-solid fa-xmark"></i>
+                              </span>
+                              <span class="button__text2">Limpar</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+
+                  </div>
+                  <!--Serial-->
+
+                  <!--Maquinas-->
+                  <div id="maquinas" class="tab-pane fade">
+
+                    <form action="../php/ajax/insercao/vendas.php" method="post" class="form-horizontal" id="formMAquinas">
+
+                      <!--CPF/CNPJ-->
+                      <div class="control-group">
+                        <div class="controls">
+                          <select form="formMAquinas" name="select_cpfcnpj" id="select_cpfcnpj">
+                            <option value="" hidden>CPF/CNPJ</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <!--Serial-->
+                      <div class="control-group">
+                        <div class="controls">
+                          <select form="formMAquinas" name="select_serial" id="select_serial">
+                            <option value="" hidden>Serial</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <!--Botões-->
+                      <div class="form-actions">
+                        <div class="span8">
+                          <div class="span9">
+                            <button type="submit" class="button btn btn-primary" id="">
+                              <span class="button__icon">
+                                <i class="fa-solid fa-floppy-disk"></i>
+                              </span>
+                              <span class="button__text2">Cadastrar</span>
+                            </button>
+                            <button type="reset" class="button btn btn-danger" id="">
+                              <span class="button__icon">
+                                <i class="fa-solid fa-xmark"></i>
+                              </span>
+                              <span class="button__text2">Limpar</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                    </form>
+
+                  </div>
+                  <!--Maquinas-->
+
+                </div>
+                <!--Telas-->
+
               </div>
             </div>
           </div>
@@ -289,7 +336,6 @@
 </body>
 <script src="../js/jquery.js"></script>
 <script src="../js/estilo/bootstrap.min.js"></script>
-
 <script src="https://kit.fontawesome.com/88ea2c002f.js" crossorigin="anonymous"></script>
 <script src="../js/cadastros/componentes.js"></script>
 <script type="module" src="../js/exibicao/main.js"></script>

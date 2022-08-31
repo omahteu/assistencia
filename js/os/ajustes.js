@@ -1,7 +1,7 @@
 $("#oscpfcnpj").focusout(function(){
     var texto = $(this).val()
     var osform = document.forms.namedItem("osform")
-    console.log(osform)
+    //console.log(osform)
 
     if(texto.length == 0){
         alert("Usuário não possui maquinas")
@@ -13,8 +13,7 @@ $("#oscpfcnpj").focusout(function(){
                     '<input type="text" id="maquina" placeholder="" disabled>'+
                 '</div>'+
             '</div>'
-        )
-        
+        )  
     } else if( texto.length > 1){
         $("#x").remove()
         $(osform).prepend(
@@ -27,4 +26,11 @@ $("#oscpfcnpj").focusout(function(){
             '</div>'
         )
     }
+
+    casa()
+
 })
+
+function casa(){
+    console.log("casa")
+}

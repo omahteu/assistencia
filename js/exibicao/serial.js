@@ -5,6 +5,7 @@ export async function listarSeriais() {
         var infos = resposta["dados"]
         infos.forEach(e => {
             $("#listaSerial").append('<option>' + e.serie + '</option>');
+            $("#select_serial").append('<option>' + e.serie + '</option>');
         });
     } else {
         console.log(resposta["msg"])
