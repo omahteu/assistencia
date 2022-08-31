@@ -107,15 +107,16 @@
                     <!--Adicionar-->
                     <div id="adicionar" class="tab-pane fade">
 
-                      <form action="" class="form-horizontal">
+                      <form action="" method="POST" class="form-horizontal" name="osform">
+
                         <!--CPF/CNPJ-->
                         <div class="control-group" name="codProdutos">
                           <div class="controls">
-                            <input type="text" id="cpfcnpj" placeholder="CPF / CNPJ" required>
+                            <input type="text" id="oscpfcnpj" placeholder="CPF / CNPJ" required>
                           </div>
                         </div>
 
-                        <!--Nome-->
+                        <!--Descrição-->
                         <div class="control-group" name="codProdutos">
                           <div class="controls">
                             <textarea name="" id="" cols="30" rows="10" placeholder="Descrição" required></textarea>
@@ -126,13 +127,13 @@
                         <div class="form-actions" name="codProdutos">
                           <div class="span8">
                             <div class="span9">
-                              <button type="button" class="button btn btn-primary" id="salvarFormPostProduto">
+                              <button type="submit" class="button btn btn-primary" id="">
                                 <span class="button__icon">
                                   <i class="fa-solid fa-floppy-disk"></i>
                                 </span>
                                 <span class="button__text2">Adicionar</span>
                               </button>
-                              <button type="reset" class="button btn btn-danger" id="limparFormPostProduto">
+                              <button type="reset" class="button btn btn-danger" id="">
                                 <span class="button__icon">
                                   <i class="fa-solid fa-xmark"></i>
                                 </span>
@@ -141,6 +142,7 @@
                             </div>
                           </div>
                         </div>
+
                       </form>
 
                     </div>
@@ -163,5 +165,6 @@
 <script src="../js/estilo/nomes.js"></script>
 <script src="../js/setup/sitePath.js"></script>
 <script src="https://kit.fontawesome.com/88ea2c002f.js" crossorigin="anonymous"></script>
+<script src="../js/os/ajustes.js"></script>
 
 </html>
