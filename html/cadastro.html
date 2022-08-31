@@ -75,39 +75,40 @@
                     <!--Clientes-->
                     <div id="clientes" class="tab-pane fade in active">
 
-                      <form action="" class="form-horizontal">
+                      <form action="../php/ajax/insercao/enviar_cliente.php" method="POST" class="form-horizontal" id="forClientes">
+
                         <!--CPF/CNPJ-->
                         <div class="control-group" name="codProdutos">
                           <div class="controls">
-                            <input type="text" id="cpfcnpj" placeholder="CPF / CNPJ" required>
+                            <input type="text" name="cpfcnpj" id="cpfcnpj" placeholder="CPF / CNPJ" required>
                           </div>
                         </div>
 
                         <!--Nome-->
                         <div class="control-group" name="codProdutos">
                           <div class="controls">
-                            <input type="text" id="nome" placeholder="Nome" required>
+                            <input type="text" name="nome" id="nome" placeholder="Nome" required>
                           </div>
                         </div>
 
                         <!--Telefone-->
                         <div class="control-group" name="codProdutos">
                           <div class="controls">
-                            <input type="text" id="telefone" placeholder="Telefone" required>
+                            <input type="text" name="telefone" id="telefone" placeholder="Telefone" required>
                           </div>
                         </div>
 
                         <!--Endereço-->
                         <div class="control-group" name="codProdutos">
                           <div class="controls">
-                            <input type="text" id="endereço" placeholder="Endereço" required>
+                            <input type="text" name="endereco" id="endereco" placeholder="Endereço" required>
                           </div>
                         </div>
 
                         <!--Serial-->
                         <div class="control-group" name="codProdutos">
                           <div class="controls">
-                            <select name="" id="">
+                            <select form="forClientes" name="listaSerial" id="listaSerial" required>
                               <option value="" hidden>Serial</option>
                             </select>
                           </div>
@@ -117,13 +118,13 @@
                         <div class="form-actions" name="codProdutos">
                           <div class="span8">
                             <div class="span9">
-                              <button type="button" class="button btn btn-primary" id="salvarFormPostProduto">
+                              <button type="submit" class="button btn btn-primary" id="">
                                 <span class="button__icon">
                                   <i class="fa-solid fa-floppy-disk"></i>
                                 </span>
                                 <span class="button__text2">Cadastrar</span>
                               </button>
-                              <button type="reset" class="button btn btn-danger" id="limparFormPostProduto">
+                              <button type="reset" class="button btn btn-danger" id="">
                                 <span class="button__icon">
                                   <i class="fa-solid fa-xmark"></i>
                                 </span>
@@ -132,6 +133,7 @@
                             </div>
                           </div>
                         </div>
+
                       </form>
 
                     </div>
@@ -140,7 +142,7 @@
                     <!--Componentes-->
                     <div id="componentes" class="tab-pane fade">
 
-                      <form action="" method="POST" class="form-horizontal" id="formComponentes">
+                      <form action="../php/ajax/insercao/enviar_componentes.php" method="POST" class="form-horizontal" id="formComponentes">
 
                         <!--Componentes-->
                         <div class="control-group">
@@ -167,7 +169,7 @@
                         <div class="form-actions" name="cadQuartos">
                           <div class="span8">
                             <div class="span9">
-                              <button type="button" class="button btn btn-primary" id="salvarFormComponentes">
+                              <button type="submit" class="button btn btn-primary" id="">
                                 <span class="button__icon">
                                   <i class="fa-solid fa-floppy-disk"></i>
                                 </span>
@@ -190,18 +192,19 @@
                     <!--Serial-->
                     <div id="serial" class="tab-pane fade">
 
-                      <form action="" class="form-horizontal">
+                      <form action="../php/ajax/insercao/enviar_serial.php" method="POST" class="form-horizontal" id="formSerial">
+
                         <!--Número de Serie-->
                         <div class="control-group">
                           <div class="controls">
-                            <input type="text" id="" placeholder="" required>
+                            <input type="text" name="numser" id="numser" placeholder="Número de Série" required>
                           </div>
                         </div>
 
                         <!--Placa-->
                         <div class="control-group">
                           <div class="controls">
-                            <select name="" id="">
+                            <select form="formSerial" name="select_placa" id="select_placa">
                               <option value="" hidden>Placa</option>
                             </select>
                           </div>
@@ -210,7 +213,7 @@
                         <!--Processador-->
                         <div class="control-group">
                           <div class="controls">
-                            <select name="" id="">
+                            <select form="formSerial" name="select_processador" id="select_processador">
                               <option value="" hidden>Processador</option>
                             </select>
                           </div>
@@ -219,7 +222,7 @@
                         <!--Memória-->
                         <div class="control-group" name="cadIgs">
                           <div class="controls">
-                            <select name="" id="">
+                            <select form="formSerial" name="select_memoria" id="select_memoria">
                               <option value="" hidden>Memória</option>
                             </select>
                           </div>
@@ -228,7 +231,7 @@
                         <!--HD-->
                         <div class="control-group" name="cadIgs">
                           <div class="controls">
-                            <select name="" id="">
+                            <select form="formSerial" name="select_hd" id="select_hd">
                               <option value="" hidden>HD</option>
                             </select>
                           </div>
@@ -237,7 +240,7 @@
                         <!--Fonte-->
                         <div class="control-group" name="cadIgs">
                           <div class="controls">
-                            <select name="" id="">
+                            <select form="formSerial" name="select_fonte" id="select_fonte">
                               <option value="" hidden>Fonte</option>
                             </select>
                           </div>
@@ -246,7 +249,7 @@
                         <!--Data-->
                         <div class="control-group" name="cadIgs">
                           <div class="controls">
-                            <input type="date" id="" required>
+                            <input type="date" name="garantia" id="garantia" required>
                           </div>
                         </div>
 
@@ -254,13 +257,13 @@
                         <div class="form-actions" name="cadIgs">
                           <div class="span8">
                             <div class="span9">
-                              <button type="submit" class="button btn btn-primary" id="salvarFormPostIg">
+                              <button type="submit" class="button btn btn-primary" id="">
                                 <span class="button__icon">
                                   <i class="fa-solid fa-floppy-disk"></i>
                                 </span>
                                 <span class="button__text2">Cadastrar</span>
                               </button>
-                              <button type="reset" class="button btn btn-danger" id="limparFormPostIg">
+                              <button type="reset" class="button btn btn-danger" id="">
                                 <span class="button__icon">
                                   <i class="fa-solid fa-xmark"></i>
                                 </span>
@@ -289,4 +292,6 @@
 
 <script src="https://kit.fontawesome.com/88ea2c002f.js" crossorigin="anonymous"></script>
 <script src="../js/cadastros/componentes.js"></script>
+<script type="module" src="../js/exibicao/main.js"></script>
+
 </html>

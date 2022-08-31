@@ -1,7 +1,6 @@
 $(document).on("change", "#icomponentes", function(){
     var item = $(this).val()
     var campo_texto = document.forms.namedItem("formComponentes")[1]
-    console.log(campo_texto)
 
     switch (item) {
         case "placa":
@@ -30,4 +29,9 @@ $(document).on("change", "#icomponentes", function(){
             $(campo_texto).attr("name", "")
             break;
     }
+})
+
+$("#limpaComponentes").click(function(){
+    var capo_texto = document.forms.namedItem("formComponentes")[1].id
+    $(`#${capo_texto}`).removeAttr("placeholder").removeAttr("id").removeAttr("name")
 })
