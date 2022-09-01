@@ -5,6 +5,7 @@ import { listarHds } from "./hd.js"
 import { listarFontes } from "./fonte.js"
 import { listarSeriais} from "./serial.js"
 import { listarClientes } from "./cliente.js"
+import { listarOs } from "./os.js"
 
 $(document).ready(function(){
     listarPlacas()
@@ -14,4 +15,5 @@ $(document).ready(function(){
     listarFontes()
     listarSeriais()
     listarClientes()
+    listarOs()
 })
