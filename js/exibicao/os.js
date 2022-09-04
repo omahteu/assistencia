@@ -14,8 +14,8 @@ export async function listarOs() {
                                     `<td>${e.descricao}</td>`+
                                     `<td>${e.estado}</td>`+
                                     `<td>`+
-                                        `<button type="button" class="btn btn-warning">Alterar</button>`+
-                                        `<button type="button" class="btn btn-danger">Excluir</button>`+
+                                        `<button type="button" name="${e.id}" class="btn btn-warning" id="osalterar">Alterar</button>`+
+                                        `<button type="button" class="btn btn-danger" id="osexcluir">Excluir</button>`+
                                     `</td>`+
                                 '</tr>'
 

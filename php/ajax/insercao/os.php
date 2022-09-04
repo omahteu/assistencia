@@ -5,7 +5,7 @@
             echo "$conn->connect_error";
             die("Connection Failed : ". $conn->connect_error);
         } else {
-            $stmt = $conn->prepare("insert into os( cpfcnpj, nome, serial, descricao, status) values(?, ?, ?, ?, ?)");
+            $stmt = $conn->prepare("insert into os( cpfcnpj, nome, serie, descricao, estado) values(?, ?, ?, ?, ?)");
             $stmt->bind_param("sssss", $cpfcnpj, $nome, $serial, $descricao, $status);
             $execval = $stmt->execute();
             echo $execval;
