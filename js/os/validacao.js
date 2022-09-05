@@ -56,7 +56,6 @@ async function valida_cpf(cpf) {
     }
 }
 
-
 $("#oscpfcnpj").focusout(function () {
     var texto = $(this).val()
     valida_cpf(texto)

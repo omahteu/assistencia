@@ -1,22 +1,19 @@
-export async function listarOs() {
-    const dados = await fetch("../php/ajax/leitura/os.php");
+async function listarOsExcluidas() {
+    const dados = await fetch("../php/ajax/leitura/osexcluidas.php");
     const resposta = await dados.json();
     if (resposta['status']) {
         var infos = resposta["dados"]
-        var tabela = document.getElementById("osemandamento")
+        var tabela = document.getElementById("osexcluidas")
         tabela.innerHTML = ""
         infos.forEach(e => {
             tabela.innerHTML += '<tr>'+
-                                    `<td>${e.id}</td>`+
+                                    `<td>${e.numero}</td>`+
                                     `<td>${e.cpfcnpj}</td>`+
                                     `<td>${e.nome}</td>`+
                                     `<td>${e.serie}</td>`+
                                     `<td>${e.descricao}</td>`+
                                     `<td>${e.estado}</td>`+
-                                    `<td>`+
-                                        `<button type="button" name="${e.id}" class="btn btn-warning" id="osalterar">Alterar</button>`+
-                                        `<button type="button" name="${e.id}" class="btn btn-danger" id="osexcluir">Excluir</button>`+
-                                    `</td>`+
+                                    `<td>${e.motivo}</td>`+
                                 '</tr>'
 
         });
@@ -24,3 +21,7 @@ export async function listarOs() {
         console.log(resposta["msg"])
     }
 }
+
+$(document).ready(function(){
+    listarOsExcluidas()
+})

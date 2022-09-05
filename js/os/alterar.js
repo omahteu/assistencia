@@ -22,8 +22,6 @@ $(document).on("click", "#osalterar", function(){
         '</select>'+
         `<input type="text" class="form-control mb-4 field-icon" value="${identificador}" name="nserie">`
     )
-
-
 })
 
 function inicioModal(modalID){
