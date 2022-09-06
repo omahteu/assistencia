@@ -11,7 +11,7 @@
             echo $execval;
             echo "Registration successfully...";
             sleep(1);
-            header("Location: https://fortalconnect.com.br/adm.html");
+            header("Location: https://fortalconnect.com.br/os.html");
             $stmt->close();
             $conn->close();
         }

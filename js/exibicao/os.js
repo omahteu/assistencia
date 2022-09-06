@@ -1,5 +1,5 @@
 export async function listarOs() {
-    const dados = await fetch("../php/ajax/leitura/os.php");
+    const dados = await fetch("https://fortalconnect.com.br/php/ajax/leitura/os.php");
     const resposta = await dados.json();
     if (resposta['status']) {
         var infos = resposta["dados"]

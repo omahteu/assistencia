@@ -1,5 +1,5 @@
 export async function listarProcessadores() {
-    const dados = await fetch("../php/ajax/leitura/processador.php");
+    const dados = await fetch("https://fortalconnect.com.br/php/ajax/leitura/processador.php");
     const resposta = await dados.json();
     if (resposta['status']) {
         var infos = resposta["dados"]

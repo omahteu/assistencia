@@ -1,5 +1,5 @@
 export async function listarFontes() {
-    const dados = await fetch("../php/ajax/leitura/fonte.php");
+    const dados = await fetch("https://fortalconnect.com.br/php/ajax/leitura/fonte.php");
     const resposta = await dados.json();
     if (resposta['status']) {
         var infos = resposta["dados"]

@@ -14,7 +14,7 @@
             echo "Error updating record: " . $conn->error;
         }
         sleep(2);
-        header("Location: https://fortalconnect.com.br/adm.html");
+        header("Location: https://fortalconnect.com.br/os.html");
         $conn->close();
     }
 

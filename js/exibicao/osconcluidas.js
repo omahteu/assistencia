@@ -1,5 +1,5 @@
 async function listarOsConcluidas() {
-    const dados = await fetch("../php/ajax/leitura/osconcluidas.php");
+    const dados = await fetch("https://fortalconnect.com.br/php/ajax/leitura/osconcluidas.php");
     const resposta = await dados.json();
     if (resposta['status']) {
         var infos = resposta["dados"]
