@@ -1,6 +1,4 @@
 <?php
-
-
     function alterar($estado, $id){
         $conn = new mysqli('us125-cp.valueserver.com.br','fortal_adm_garantias','{xwl&EGy]o(#','fortal_garantias', 3306);
 

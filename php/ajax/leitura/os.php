@@ -1,5 +1,5 @@
 <?php 
-    include_once("conexao.php");
+    include "../conexao.php";
     $query = "SELECT id, cpfcnpj, nome, serie, descricao, estado FROM os";
     $resultado = $conn->query($query);
     if ($resultado->num_rows > 0) {

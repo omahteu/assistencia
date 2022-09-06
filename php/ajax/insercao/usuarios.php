@@ -1,5 +1,5 @@
 <?php
-    include_once("conexao.php");
+    include "../conexao.php";
 
     $sql = "INSERT INTO usuarios (nome, senha)
     VALUES ('fortal', 'Tiadm123@')";

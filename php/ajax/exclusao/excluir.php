@@ -1,7 +1,6 @@
 <?php
     function delete($tabela, $valor){
-        include_once("conexao.php");
-        // sql to delete a record
+        include "../conexao.php";
         $sql = "DELETE FROM $tabela WHERE id = $valor";
 
         if ($conn->query($sql) === TRUE) {
