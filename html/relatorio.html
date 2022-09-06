@@ -63,13 +63,13 @@
                   <!--Concluídos-->
                   <ul style="flex-direction: row;" class="site-stats">
                     <li style="width: 200px;">
-                      <a id="peQuartos">
+                      <a id="pdfConcluidas">
                         <i class="fa-regular fa-file-pdf"></i>
                         <small>Concluídos - PDF</small>
                       </a>
                     </li>
                     <li style="width: 200px;">
-                      <a id="peQuartosx">
+                      <a id="excelConcluidas">
                         <i class="fa-regular fa-file-excel"></i>
                         <small>Concluídos - EXCEL</small>
                       </a>
@@ -79,13 +79,13 @@
                   <!--Cancelados-->
                   <ul style="flex-direction: row;" class="site-stats">
                     <li style="width: 200px;">
-                      <a id="peIgs">
+                      <a id="pdfExcluidas">
                         <i class="fa-regular fa-file-pdf"></i>
                         <small>Cancelados - PDF</small>
                       </a>
                     </li>
                     <li style="width: 200px;">
-                      <a id="peIgsx">
+                      <a id="excelExcluidas">
                         <i class="fa-regular fa-file-excel"></i>
                         <small>Cancelados- EXCEL</small>
                       </a>
@@ -118,7 +118,7 @@
 
                     <!--Concluídos-->
                     <div id="concluidos" class="tab-pane fade in active">
-                      <table id="relQuartos" class="table table-bordered  dataTable no-footer" role="grid">
+                      <table id="os_concluidas" class="table table-bordered  dataTable no-footer" role="grid">
                         <thead>
                           <tr role="row">
                             <th>Nº</th>
@@ -128,13 +128,13 @@
                             <th>Descrição</th>
                             <th>Responsável</th>
                         </thead>
-                        <tbody id="tabrlaRelatorioQuartos"></tbody>
+                        <tbody id="osconcluidas"></tbody>
                       </table>
                     </div>
 
                     <!--Cancelados-->
                     <div id="cancelados" class="tab-pane fade">
-                      <table id="relIg" class="table table-bordered  dataTable no-footer" role="grid">
+                      <table id="os_excluidas" class="table table-bordered  dataTable no-footer" role="grid">
                         <thead>
                           <tr role="row">
                             <th>Nº</th>
@@ -165,5 +165,10 @@
 <script src="../js/estilo/nomes.js"></script>
 <script src="https://kit.fontawesome.com/88ea2c002f.js" crossorigin="anonymous"></script>
 <script src="../js/exibicao/osexcluidas.js"></script>
+<script src="../js/exibicao/osconcluidas.js"></script>
+<script src="../js/baixar/excelConcluidas.js"></script>
+<script src="../js/baixar/excelExcluidas.js"></script>
+<script src="../js/baixar/pdfConcluidas.js"></script>
+<script src="../js/baixar/pdfExcluidas.js"></script>
 
 </html>

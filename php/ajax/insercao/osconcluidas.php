@@ -17,16 +17,19 @@
         }
     }
 
-    $cpfcnpj = $_POST["oscpfcnpj"];
-    $nome = $_POST["osnome"];
-    $serial = $_POST["osmaquina"];
-    $descricao = $_POST["osdescricao"];
-    $status = "Aguardando Aprovação";
+    include "../leitura/osfiltro.php";
 
-    if (isset($serial) == true && empty($serial) == false){
-        adicionarOs($cpfcnpj, $nome, $serial, $descricao, $status);
-    } else {
-        $serials = $_POST["osmaquinas"];
-        adicionarOs($cpfcnpj, $nome, $serials, $descricao, $status);
-    }
+    $identificador = $_POST["nserie"];
+    $responsavel = $_POST["responsavel"];
+
+    $dados = dadosFiltrados($identificador);
+
+    $numero = $dados[0]["id"];
+    $cpfcnpj = $dados[0]["cpfcnpj"];
+    $nome = $dados[0]["nome"];
+    $serie = $dados[0]["serie"];
+    $descricao = $dados[0]["descricao"];
+
+    adicionarOs($numero, $cpfcnpj, $nome, $serie, $descricao, $responsavel)
+
 ?>

@@ -3,9 +3,10 @@ async function listarOs() {
     const resposta = await dados.json();
     if (resposta['status']) {
         var infos = resposta["dados"]
+        var registro = infos.filter(el => el.estado != "Finalizado")
         var tabela = document.getElementById("osemandamentohome")
         tabela.innerHTML = ""
-        infos.forEach(e => {
+        registro.forEach(e => {
             tabela.innerHTML += '<tr>'+
                                     `<td>${e.id}</td>`+
                                     `<td>${e.cpfcnpj}</td>`+

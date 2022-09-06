@@ -1,10 +1,7 @@
 <?php 
-    
-
-
-    function dadosFiltrados($tabela, $identificador){
+    function dadosFiltrados($identificador){
         include "../conexao.php";
-        $query = "SELECT id, cpfcnpj, nome, serie, descricao, estado FROM $tabela where id=$identificador";
+        $query = "SELECT id, cpfcnpj, nome, serie, descricao, estado FROM os where id='$identificador'";
         $resultado = $conn->query($query);
         if ($resultado->num_rows > 0) {
             while($row = $resultado->fetch_assoc()) {
@@ -24,14 +21,4 @@
         return $retorna;
         //echo json_encode($retorna);
     }
-
-
-
-
-
-
-
-
-
-
 ?>
