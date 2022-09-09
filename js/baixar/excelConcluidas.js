@@ -1,4 +1,4 @@
-$("#excelConcluidas").click(function(e){
+$(document).on("click", "#excelConcluidas", function(e){
     e.preventDefault()
     var divTabela = document.getElementById("os_concluidas")
     var dados = new Blob(['\ufeff' + divTabela.outerHTML], {type:'application/vnd.ms-excel'})

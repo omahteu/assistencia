@@ -19,6 +19,5 @@
             $retorna = ['status' => false, 'msg' => "ERRO"];
         }
         return $retorna;
-        //echo json_encode($retorna);
     }
 ?>

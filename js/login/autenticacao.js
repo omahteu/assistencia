@@ -1,7 +1,7 @@
 import { usuarios } from "../exibicao/usuarios.js"
 
 
-$("#entrar").click(function () {
+$(document).on("click", "#entrar", function () {
     var usuario = $("#usuario").val()
     var senha = $("#senha").val()
     if (usuario == "" && senha == ""){
