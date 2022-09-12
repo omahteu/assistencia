@@ -1036,6 +1036,7 @@
 
     .span12,
     .row-fluid .span12 {
+        margin-top: 1rem;
         width: 100%;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;

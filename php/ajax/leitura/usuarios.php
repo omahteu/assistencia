@@ -1,5 +1,6 @@
 <?php 
     include "../conexao.php";
+    header("Acesso-Controle-Permitir-Origem: *");
     $query = "SELECT id, nome, senha FROM usuarios";
     $resultado = $conn->query($query);
     if ($resultado->num_rows > 0) {
