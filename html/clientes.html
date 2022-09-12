@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Suits | Relatórios</title>
+  <link rel="icon" href="img/fc-icon.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="../imagens/favicon-removebg-preview.png">
+  <link rel="stylesheet" href="../css/assistencia/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/assistencia/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="../css/assistencia/matrix-style.css">
+  <link rel="stylesheet" href="../css/assistencia/matrix-media.css">
+</head>
+
+<body>
+  <!--top-Header-menu-->
+  <div class="navebarn">
+    <div id="user-nav" class="navbar navbar-inverse">
+      <ul class="nav" style="width: auto; margin: 0px;"></ul>
+    </div> <!-- New User -->
+  </div>
+  <!-- End User -->
+  <div id="content">
+    <!--start-top-serch-->
+    <div id="content-header">
+      <!-- New Bem-vindos -->
+      <div class="bemv">Dashboard</div>
+      <div id="breadcrumb">
+        <a href="./home.html" class="tip-bottom"> Início</a>
+        <a href="" class="current tip-bottom"> Clientes </a>
+      </div>
+    </div>
+    <div class="container-flu">
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="row-fluid" style="margin-top: 0">
+            <!-- Caixa de Impressão de Relatórios-->
+            <div class="span4">
+              <div class="widget-box">
+                <div class="widget-title">
+                  <span class="icon">
+                    <i class="fas fa-users"></i>
+                  </span>
+                  <h5>Relatórios Rápidos</h5>
+                </div>
+                <div class="widget-content" id="relatorios_rapidos">
+
+                  <!--Concluídos-->
+                  <ul style="flex-direction: row;" class="site-stats">
+                    <li style="width: 200px;">
+                      <a id="pdfConcluidas">
+                        <i class="fa-regular fa-file-pdf"></i>
+                        <small>Concluídos - PDF</small>
+                      </a>
+                    </li>
+                    <li style="width: 200px;">
+                      <a id="excelConcluidas">
+                        <i class="fa-regular fa-file-excel"></i>
+                        <small>Concluídos - EXCEL</small>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <!--Cancelados-->
+                  <ul style="flex-direction: row;" class="site-stats">
+                    <li style="width: 200px;">
+                      <a id="pdfExcluidas">
+                        <i class="fa-regular fa-file-pdf"></i>
+                        <small>Cancelados - PDF</small>
+                      </a>
+                    </li>
+                    <li style="width: 200px;">
+                      <a id="excelExcluidas">
+                        <i class="fa-regular fa-file-excel"></i>
+                        <small>Cancelados- EXCEL</small>
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+            <div class="span8">
+              <div class="widget-box">
+                <div class="widget-title">
+                  <span class="icon">
+                    <i class="fas fa-users"></i>
+                  </span>
+                  <h5>Clientes</h5>
+                </div>
+
+                <ul class="nav nav-tabs">
+                  <li class="active">
+                    <a data-toggle="tab" href="#clientes">Clientes</a>
+                  </li>
+                  <li>
+                    <a data-toggle="tab" href="#clientesmaquinas">Clientes > Máquinas</a>
+                  </li>
+                </ul>
+
+                <form action="" id="formConfigurar" method="post" class="form-horizontal">
+                  <div class="widget-content nopadding tab-content">
+
+                    <!--Clientes-->
+                    <div id="clientes" class="tab-pane fade in active">
+                      <table id="os_concluidas" class="table table-bordered  dataTable no-footer" role="grid">
+                        <thead>
+                          <tr role="row">
+                            <th>CPF / CNPJ</th>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                            <th>Rua</th>
+                            <th>Número</th>
+                            <th>Bairro</th>
+                        </thead>
+                        <tbody id="clientes"></tbody>
+                      </table>
+                    </div>
+
+
+                    <!--Clientes & Maquinas-->
+                    <div id="clientesmaquinas" class="tab-pane fade in active">
+                        <table id="os_concluidas" class="table table-bordered  dataTable no-footer" role="grid">
+                            <thead>
+                            <tr role="row">
+                                <th>CPF / CNPJ</th>
+                                <th>Nome</th>
+                                <th>Telefone</th>
+                                <th>Rua</th>
+                                <th>Número</th>
+                                <th>Bairro</th>
+                            </thead>
+                            <tbody id=""></tbody>
+                        </table>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/estilo/bootstrap.min.js"></script>
+<script src="../js/estilo/nomes.js"></script>
+<script src="https://kit.fontawesome.com/88ea2c002f.js" crossorigin="anonymous"></script>
+<script src="../js/exibicao/osexcluidas.js"></script>
+<script src="../js/exibicao/osconcluidas.js"></script>
+<script src="../js/baixar/excelConcluidas.js"></script>
+<script src="../js/baixar/excelExcluidas.js"></script>
+<script src="../js/baixar/pdfConcluidas.js"></script>
+<script src="../js/baixar/pdfExcluidas.js"></script>
+
+</html>
