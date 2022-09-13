@@ -8,6 +8,4 @@ $(document).on("change", "#novoestado", function(){
             `<input type="text" class="form-control mb-4 field-icon" placeholder="Responsável Técnico" name="responsavel" required>`
         )
     }
-
-   
 })

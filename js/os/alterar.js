@@ -12,7 +12,7 @@ $(document).on("click", "#osalterar", function(){
       '</div>'
     );
     $(`#${box}`).prepend(
-        '<select class="form-control mb-4 field-icon" form="formOs" name="novoestado" id="novoestado">'+
+        '<select class="form-control mb-4 field-icon lselect" form="formOs" name="novoestado" id="novoestado">'+
             '<option value="" hidden>Status</option>'+
             '<option value="analise">Em Análise</option>'+
             '<option value="aguardando">Aguardando Aprovação</option>'+
@@ -20,7 +20,7 @@ $(document).on("click", "#osalterar", function(){
             '<option value="manutencao">Em Manutenção</option>'+
             '<option value="finalizado">Finalizado</option>'+
         '</select>'+
-        `<input type="text" class="form-control mb-4 field-icon" value="${identificador}" name="nserie">`
+        `<input type="text" class="form-control mb-4 field-icon linput" value="${identificador}" name="nserie">`
     )
 })
 

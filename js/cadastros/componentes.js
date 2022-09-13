@@ -31,7 +31,7 @@ $(document).on("change", "#icomponentes", function(){
     }
 })
 
-$("#limpaComponentes").click(function(){
+$(document).on("click", "#limpaComponentes", function(){
     var capo_texto = document.forms.namedItem("formComponentes")[1].id
     $(`#${capo_texto}`).removeAttr("placeholder").removeAttr("id").removeAttr("name")
 })

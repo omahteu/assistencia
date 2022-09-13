@@ -1,4 +1,4 @@
-$("#excelExcluidas").click(function(e){
+$(document).on("click", "#excelExcluidas", function(e){
     e.preventDefault()
     var divTabela = document.getElementById("os_excluidas")
     var dados = new Blob(['\ufeff' + divTabela.outerHTML], {type:'application/vnd.ms-excel'})

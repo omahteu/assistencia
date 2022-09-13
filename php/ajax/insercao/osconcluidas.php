@@ -1,5 +1,5 @@
 <?php
-    function adicionarOs($numero, $cpfcnpj, $nome, $serial, $descricao, $responsavel){
+    function finalizarOs($numero, $cpfcnpj, $nome, $serial, $descricao, $responsavel){
         $conn = new mysqli('us125-cp.valueserver.com.br','fortal_adm_garantias','{xwl&EGy]o(#','fortal_garantias', 3306);
         if($conn->connect_error){
             echo "$conn->connect_error";
@@ -30,6 +30,6 @@
     $serie = $dados[0]["serie"];
     $descricao = $dados[0]["descricao"];
 
-    adicionarOs($numero, $cpfcnpj, $nome, $serie, $descricao, $responsavel)
+    finalizarOs($numero, $cpfcnpj, $nome, $serie, $descricao, $responsavel)
 
 ?>

@@ -4,24 +4,18 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Fortal Connect | Assistência</title>
+    <link rel="icon" href="img/fc-icon.png" type="image/png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="../css/matrix-style.css">
-    <link rel="stylesheet" href="../css/matrix-media.css">
-    <link rel="stylesheet" href="../css/fullcalendar.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/css.css">
-    <link rel="stylesheet" href="../css/css2.css">
-    <link rel="stylesheet" href="../css/boxicons.min.css">
-    <link rel="stylesheet" href="../css/fullcalendar.min.css">
-    <link rel="stylesheet" href="../css/jquery.jqplot.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="stylesheet" href="../css/assistencia/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/assistencia/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="../css/assistencia/matrix-style.css">
+    <link rel="stylesheet" href="../css/assistencia/matrix-media.css">
+    <link rel="stylesheet" href="../css/assistencia/styles.css">
+    <link rel="stylesheet" href="../css/assistencia/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link rel="stylesheet" href="../css/css2(1).css">
-    <link rel="stylesheet" href="../css/css2(2).css">
+
 
 </head>
 
@@ -30,20 +24,6 @@
     <div class="navebarn">
         <div id="user-nav" class="navbar navbar-inverse"></div> 
         <!-- New User -->
-        <div id="userr"
-            style="padding-right:45px;display:flex;flex-direction:column;align-items:flex-end;justify-content:center;">
-            <div class="user-names userT0" id="saudacao_usuario"></div>
-            <div class="userT" id="usuario_sistema"></div>
-            <section style="display:block;position:absolute;right:10px">
-                <div class="profile">
-                    <div class="profile-img"> 
-                        <a href="#">
-                            <img src="../imagens/a2c0e016d91ff61639ec3d6cfea18e02.png" alt="">
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </div>
     </div>
     <!-- End User -->
 
@@ -98,17 +78,30 @@
                             </a>
                         </li>
                         <!-- Relatórios -->
+
+                        <!--Clientes-->
+                        <li class="card">
+                            <div>
+                                <div class="numbers">Clientes</div>
+                            </div> 
+                            <a href="./clientes.html">
+                                <div class="iconBx"> 
+                                    <i class="fa-solid fa-person"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <!--Clientes-->
                         
                         <!--Hora-->
                         <div class="card-cl">
                             <div class="clock-card">
                                 <div class="clock-flex"> 
-                                    <span class="num hour_num">07</span>
+                                    <span class="num hour_num">00</span>
                                     <div class="tit">Horas</div>
                                 </div> 
                                 <span class="colun" id="colun-1">:</span>
                                 <div class="clock-flex"> 
-                                    <span class="num min_num">17</span>
+                                    <span class="num min_num">0</span>
                                     <div class="tit">Minutos</div>
                                 </div>
                                 <div class="time_am_pm"> 

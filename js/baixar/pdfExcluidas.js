@@ -1,4 +1,4 @@
-$("#pdfExcluidas").click(function(){
+$(document).on("click", "#pdfExcluidas", function(){
     var janela = window.open()
     janela.document.write("<html>")
     janela.document.write("<head>")

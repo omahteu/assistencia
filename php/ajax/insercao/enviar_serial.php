@@ -1,5 +1,8 @@
 <?php
-    $serial = $_POST["numser"];
+
+    $comb = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    $shfl = str_shuffle($comb);
+    $serial = substr($shfl,0,12);
     $placa = $_POST["select_placa"];
     $processador = $_POST["select_processador"];
     $memoria = $_POST["select_memoria"];

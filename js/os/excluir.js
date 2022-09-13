@@ -12,7 +12,7 @@ $(document).on("click", "#osexcluir", function(){
       '</div>'
     )
     $(`#${box}`).prepend(
-        '<textarea placeholder="Motivo" name="osmotivo" id="osmotivo" cols="30" rows="10"></textarea>'+
-        `<input type="text" class="form-control mb-4 field-icon" value="${identificador}" name="aidentificador">`
+        '<textarea class="linput" placeholder="Motivo" name="osmotivo" id="osmotivo" cols="30" rows="10"></textarea>'+
+        `<input type="text" class="form-control mb-4 field-icon linput" value="${identificador}" name="aidentificador">`
     )
 })

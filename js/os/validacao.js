@@ -56,7 +56,7 @@ async function valida_cpf(cpf) {
     }
 }
 
-$("#oscpfcnpj").focusout(function () {
+$(document).on("focusout", "#oscpfcnpj", function () {
     var texto = $(this).val()
     valida_cpf(texto)
 })

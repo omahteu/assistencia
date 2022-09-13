@@ -1,4 +1,4 @@
-$("#pdfConcluidas").click(function(){
+$().on("click", "#pdfConcluidas", function(){
     var janela = window.open()
     janela.document.write("<html>")
     janela.document.write("<head>")

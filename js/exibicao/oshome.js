@@ -50,7 +50,7 @@ $(document).ready(function(){
     listarOs()
 })
 
-$("#filtrOs").change(function(){
+$(document).on("change", "#filtrOs", function(){
     var item = $(this).val()
     if (item == "aguardando"){
         listarOsFiltro("Aguardando Aprovação");

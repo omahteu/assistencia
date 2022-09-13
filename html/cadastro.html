@@ -5,11 +5,12 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>FC Assistência | Cadastros</title>
+  <link rel="icon" href="img/fc-icon.png" type="image/png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/png" href="../imagens/favicon-removebg-preview.png">
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/matrix-style.css">
-  <link rel="stylesheet" href="../css/matrix-media.css">
+  <link rel="stylesheet" href="../css/assistencia/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/assistencia/matrix-style.css">
+  <link rel="stylesheet" href="../css/assistencia/matrix-media.css">
 </head>
 
 <body>
@@ -17,19 +18,6 @@
   <div class="navebarn">
     <div id="user-nav" class="navbar navbar-inverse"></div>
     <!-- New User -->
-    <div id="userr"
-      style="padding-right:45px;display:flex;flex-direction:column;align-items:flex-end;justify-content:center;">
-      <div class="user-names userT0" id="saudacao_usuario"></div>
-      <div class="userT" id="usuario_sistema"></div>
-      <section style="display:block;position:absolute;right:10px">
-        <div class="profile">
-          <div class="profile-img">
-            <a href="">
-              <img src="../imagens/a2c0e016d91ff61639ec3d6cfea18e02.png" alt=""></a>
-          </div>
-        </div>
-      </section>
-    </div>
   </div>
   <!-- End User -->
 
@@ -112,6 +100,21 @@
                         </div>
                       </div>
 
+
+                      <!--Número-->
+                      <div class="control-group">
+                        <div class="controls">
+                          <input type="text" name="numero" id="numero" placeholder="Número" required>
+                        </div>
+                      </div>
+
+                      <!--Bairro-->
+                      <div class="control-group">
+                        <div class="controls">
+                          <input type="text" name="bairro" id="bairro" placeholder="Bairro" required>
+                        </div>
+                      </div>
+
                       <!--Botões-->
                       <div class="form-actions">
                         <div class="span8">
@@ -191,13 +194,6 @@
                   <div id="serial" class="tab-pane fade">
 
                     <form action="../php/ajax/insercao/enviar_serial.php" method="POST" class="form-horizontal" id="formSerial">
-
-                      <!--Número de Serie-->
-                      <div class="control-group">
-                        <div class="controls">
-                          <input type="text" name="numser" id="numser" placeholder="Número de Série" required>
-                        </div>
-                      </div>
 
                       <!--Placa-->
                       <div class="control-group">
