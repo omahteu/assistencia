@@ -47,34 +47,34 @@
                 </div>
                 <div class="widget-content" id="relatorios_rapidos">
 
-                  <!--Concluídos-->
+                  <!--Clientes-->
                   <ul style="flex-direction: row;" class="site-stats">
                     <li style="width: 200px;">
-                      <a id="pdfConcluidas">
+                      <a id="pdfClientes">
                         <i class="fa-regular fa-file-pdf"></i>
-                        <small>Concluídos - PDF</small>
+                        <small>Clientes - PDF</small>
                       </a>
                     </li>
                     <li style="width: 200px;">
-                      <a id="excelConcluidas">
+                      <a id="excelClientes">
                         <i class="fa-regular fa-file-excel"></i>
-                        <small>Concluídos - EXCEL</small>
+                        <small>Clientes - EXCEL</small>
                       </a>
                     </li>
                   </ul>
 
-                  <!--Cancelados-->
+                  <!--Clientes&Maquinas-->
                   <ul style="flex-direction: row;" class="site-stats">
                     <li style="width: 200px;">
                       <a id="pdfExcluidas">
                         <i class="fa-regular fa-file-pdf"></i>
-                        <small>Cancelados - PDF</small>
+                        <small>Clientes & Maquinas - PDF</small>
                       </a>
                     </li>
                     <li style="width: 200px;">
-                      <a id="excelExcluidas">
+                      <a id="excelClientesMaquinas">
                         <i class="fa-regular fa-file-excel"></i>
-                        <small>Cancelados- EXCEL</small>
+                        <small>Clientes & Maquinas- EXCEL</small>
                       </a>
                     </li>
                   </ul>
@@ -105,7 +105,7 @@
 
                     <!--Clientes-->
                     <div id="clientes" class="tab-pane fade in active">
-                      <table id="os_concluidas" class="table table-bordered  dataTable no-footer" role="grid">
+                      <table id="tab_clientes" class="table table-bordered  dataTable no-footer" role="grid">
                         <thead>
                           <tr role="row">
                             <th>CPF / CNPJ</th>
@@ -115,24 +115,20 @@
                             <th>Número</th>
                             <th>Bairro</th>
                         </thead>
-                        <tbody id="clientes"></tbody>
+                        <tbody id="lista_clientes"></tbody>
                       </table>
                     </div>
 
 
                     <!--Clientes & Maquinas-->
-                    <div id="clientesmaquinas" class="tab-pane fade in active">
-                        <table id="os_concluidas" class="table table-bordered  dataTable no-footer" role="grid">
+                    <div id="clientesmaquinas" class="tab-pane fade">
+                        <table id="tab_clientesmaquinas" class="table table-bordered  dataTable no-footer" role="grid">
                             <thead>
                             <tr role="row">
                                 <th>CPF / CNPJ</th>
-                                <th>Nome</th>
-                                <th>Telefone</th>
-                                <th>Rua</th>
-                                <th>Número</th>
-                                <th>Bairro</th>
+                                <th>Serial</th>
                             </thead>
-                            <tbody id=""></tbody>
+                            <tbody id="lista_clientesmaquinas"></tbody>
                         </table>
                     </div>
                   </div>
@@ -149,11 +145,9 @@
 <script src="../js/estilo/bootstrap.min.js"></script>
 <script src="../js/estilo/nomes.js"></script>
 <script src="https://kit.fontawesome.com/88ea2c002f.js" crossorigin="anonymous"></script>
-<script src="../js/exibicao/osexcluidas.js"></script>
-<script src="../js/exibicao/osconcluidas.js"></script>
-<script src="../js/baixar/excelConcluidas.js"></script>
-<script src="../js/baixar/excelExcluidas.js"></script>
-<script src="../js/baixar/pdfConcluidas.js"></script>
-<script src="../js/baixar/pdfExcluidas.js"></script>
+
+
+<script src="../js/exibicao/clientes.js"></script>
+<script src="../js/exibicao/clientesmaquinas.js"></script>
 
 </html>
