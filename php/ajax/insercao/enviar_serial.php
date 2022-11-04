@@ -2,7 +2,8 @@
 
     $comb = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     $shfl = str_shuffle($comb);
-    $serial = substr($shfl,0,12);
+    // $serial = substr($shfl,0,12);
+    $serial = $_POST["numero_serial"] == "" ? substr($shfl,0,12) : $_POST["numero_serial"] == "";
     $placa = $_POST["select_placa"];
     $processador = $_POST["select_processador"];
     $memoria = $_POST["select_memoria"];
