@@ -1,5 +1,6 @@
 export async function usuarios(usuario, senha) {
-    const dados = await fetch("https://fortalconnect.com.br/php/ajax/leitura/usuarios.php");
+    const raiz = window.location.href
+    const dados = await fetch(`${raiz}/php/ajax/leitura/usuarios.php`);
     const resposta = await dados.json();
     if (resposta['status']) {
         var infos = resposta["dados"]
@@ -8,7 +9,7 @@ export async function usuarios(usuario, senha) {
             box.forEach(e => {
                 if (e.nome == usuario && e.senha == senha) {
                     sessionStorage.setItem("chave", "logado")
-                    window.location.href = "https://fortalconnect.com.br/home.html";
+                    window.location.href = `${raiz}html/home.html`
                 } else {
                     alert("Senha Inválida")
                 }

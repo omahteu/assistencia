@@ -1,5 +1,6 @@
 export async function listarSeriais() {
-    const dados = await fetch("https://fortalconnect.com.br/php/ajax/leitura/serial.php");
+    const raiz = window.location.host
+    const dados = await fetch(`http://${raiz}/assistencia/php/ajax/leitura/serial.php`)
     const resposta = await dados.json();
     if (resposta['status']) {
         var infos = resposta["dados"]
