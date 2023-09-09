@@ -1,5 +1,6 @@
 async function listarClientes() {
-    const dados = await fetch("https://fortalconnect.com.br/php/ajax/leitura/cliente.php");
+    const raiz = window.location.host
+    const dados = await fetch(`http://${raiz}/assistencia/php/ajax/leitura/cliente.php`)
     const resposta = await dados.json();
     if (resposta['status']) {
         var infos = resposta["dados"]

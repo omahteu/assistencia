@@ -1,5 +1,6 @@
 async function listarOsExcluidas() {
-    const dados = await fetch("https://fortalconnect.com.br/php/ajax/leitura/osexcluidas.php");
+    const raiz = window.location.host
+    const dados = await fetch(`http://${raiz}/assistencia/php/ajax/leitura/osexcluidas.php`)
     const resposta = await dados.json();
     if (resposta['status']) {
         var infos = resposta["dados"]
